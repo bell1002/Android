@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Phone_Dialog"
+    android:orientation="vertical"
+    android:background="#6B6A6C">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thong tin chi tiet"
+        android:textColor="@color/white"
+        android:textSize="23dp"/>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/purple_500"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ma san pham: "
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/ediId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nhap ma san pham "
+            android:textSize="20dp"
+            android:layout_weight="9"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ten san pham: "
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/edtname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nhap ten san pham "
+            android:textSize="20dp"
+            android:layout_weight="9"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gia ban ra: "
+            android:textSize="20dp"
+            android:layout_weight="2"/>
+        <EditText
+            android:id="@+id/edtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nhap gia ban "
+            android:textSize="20dp"
+            android:layout_weight="8"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp">
+        <Button
+            android:id="@+id/btndelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xoa san pham "
+            android:textSize="17dp"/>
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tro ve "
+            android:textSize="17dp"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
